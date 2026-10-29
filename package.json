@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-meetup",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Meetup MCP — wraps Meetup's public GraphQL API (api.meetup.com, free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-meetup": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "meetup"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-meetup.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/meetup",
   "pipeworx": {
-    "sourceHash": "v1-51cd14c2d4e405ac92143ce786c6005ec16bdb95ed88594bdfaf979f868c1edc",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "meetup",
+    "gatewaySlug": "meetup",
+    "sourceHash": "v1-b4f1f03065bd0d5845f910f93664c7c51740c73a83c77a3666a9344146605af0",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

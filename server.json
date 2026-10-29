@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/meetup",
   "title": "Meetup",
   "description": "Meetup MCP — wraps Meetup's public GraphQL API (api.meetup.com, free, no auth)",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/meetup",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-meetup",
