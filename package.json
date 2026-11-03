@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-meetup",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Meetup MCP — wraps Meetup's public GraphQL API (api.meetup.com, free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "meetup",
     "gatewaySlug": "meetup",
-    "sourceHash": "v1-b4f1f03065bd0d5845f910f93664c7c51740c73a83c77a3666a9344146605af0",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-4dbb5034e76eb4a5190e833fa49c1f6bc03cecf5df50e82477eafb17ab35eaf0",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
